@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Breaking Barriers: The Rise of Women in Olympics</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body>
+        <div id="tooltip-container"></div>
+        <div id="main-title">
+            <h1>Breaking Barriers: The Rise of Women in Olympics</h1>
+            <h2>A Journey Through the Evolution of Gender Equality in the Summer Olympics from 1896 to 2016</h2>
+        </div>
+        
+        <div id="page-list">
+            <button class="page-list-button" data-page="1">1</button>
+            <button class="page-list-button" data-page="2">2</button>
+            <button class="page-list-button" data-page="3">3</button>
+            <button class="page-list-button" data-page="next">Next</button>
+        </div>
+        
+        <div id="scene">
+            <div id="scene-text">
+                <h3 id="scene-title"></h3>
+                <p id="scene-description"></p>
+            </div>
+            <div id="chart">
+                <svg></svg>
+            </div>
+        </div>
+        
+        <div id="dimension-list">
+            <h3>Dimensions</h3>
+            <div id="dimension-list-actions">
+            <input type="radio" id="participation" name="dimension" value="Participation">
+            <label for="participation">Participation</label>
+            <input type="radio" id="medal-wins" name="dimension" value="Medal Wins">
+            <label for="medal-wins">Medal Wins</label>
+            <input type="radio" id="sports-participated" name="dimension" value="Sports Participated">
+            <label for="sports-participated">Sports Participated</label>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
